@@ -1,0 +1,151 @@
+body {
+	background: var(--black-purple);
+	font-family: 'Yusei Magic', sans-serif;
+	width: 100%;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+html {
+	--black-purple: #241f29;
+	--light-white: #e0d3ed;
+	--light-gray: #c0c0c0;
+	--light-pink: #d417a5;
+	--black-pink: #a31881;
+}
+
+*{
+	padding: 0;
+	box-sizing: unset;
+}
+
+/* Início classes Flexbox */
+.fbox {
+	display: flex;
+}
+
+.fbfdc {
+	flex-direction: column;
+}
+
+.fbac {
+	align-items: center;
+}
+
+.fbjs {
+	justify-content: flex-start;
+}
+
+/* Fim classes Flexbox */
+h1 {
+	font-family: 'Hachi Maru Pop', cursive;
+	text-align: center;
+	color: var(--light-white);
+}
+
+#form-container {
+	background: var(--light-white);
+	max-width: calc(525px - 30px);
+	padding: 0 15px;
+	height: auto;
+	border-radius: 8px;
+	margin-bottom: 50px;
+}
+
+#description {
+	text-align: center;
+	font-weight: bold;
+}
+
+#survey-form {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 330px;
+}
+
+fieldset,
+input {
+	border-radius: 5px;
+}
+
+input {
+	height: 32px;
+	width: 280px;
+	padding: 5px;
+	margin: 10px;
+	border: 1px solid var(--light-gray);
+	margin-bottom: 10px;
+	font-family: 'Yusei Magic', sans-serif;
+}
+
+fieldset {
+	width: 280px;
+	height: auto;
+	margin-bottom: 15px;
+}
+
+#survey-form>div {
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.radio-button {
+	width: 15px;
+	height: 15px;
+}
+
+input[type=checkbox] {
+	width: 15px;
+	height: 15px;
+}
+
+.comment-title {
+	font-weight: bold;
+	margin: 10px 0;
+}
+
+textarea {
+	margin-bottom: 15px;
+	max-width: 330px;
+}
+
+#submit {
+	padding: 10px 20px;
+	margin-bottom: 10px;
+	font-family: 'Hachi Maru Po', cursive;
+	font-weight: bold;
+	background: var(--light-pink);
+	border-style: none;
+	border-radius: 6px;
+	color: #FFFFFF;
+	transition: all 0.4s ease;
+}
+
+.arrow-right {
+	display: block;
+	width: 20px;
+	height: 20px;
+	background: url("assets/arrow-right-btn-submit.svg") no-repeat center;
+	background-size: contain;
+	transition: all 0.4s ease;
+}
+
+#submit:hover {
+	cursor: pointer;
+	background: var(--black-pink);
+}
+
+#submit:hover>.arrow-right {
+	transform: translateX(9px);
+}
+
+span {
+	width: 300px;
+	display: flex;
+	justify-content: flex-end;
+}
